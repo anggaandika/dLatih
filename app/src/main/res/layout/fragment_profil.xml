@@ -1,113 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
     tools:context=".view.fragment.profil">
 
-    <com.rahgena.dlatih.view.tab.SlidingTabLayout
-        android:id="@+id/stl_tab"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent">
-    </com.rahgena.dlatih.view.tab.SlidingTabLayout>
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/vp_tabs"
+    <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </androidx.viewpager.widget.ViewPager>
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
 
-
-    <ScrollView
-        android:layout_marginBottom="60dp"
-        android:layout_marginTop="130dp"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:orientation="vertical"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <RelativeLayout
-                android:layout_marginTop="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginLeft="20dp"
-                    android:textSize="30sp"
-                    android:textColor="#000000"
-                    android:text="Akun"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content" />
-            </RelativeLayout>
-            <GridLayout
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:columnCount="1"
-                android:rowCount="1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:layout_marginTop="3dp"
-                        android:src="@drawable/image"
-                        android:layout_width="150dp"
-                        android:layout_height="100dp" />
-                </LinearLayout>
-            </GridLayout>
-            <GridLayout
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:columnCount="1"
-                android:rowCount="10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:textSize="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Nama    :"/>
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:textSize="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Email     :"/>
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:textSize="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Alamat  :"/>
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:textSize="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Jenis Kelamin  :"/>
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:textSize="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="no. Telp  :"/>
-                <TextView
-                    android:layout_marginTop="20dp"
-                    android:textSize="20dp"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Status  :"/>
+            android:layout_height="match_parent">
 
+            <ImageView
+                android:id="@+id/imagePeson"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/ic_person_black_24dp" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Nama Persorn"
+                android:textFontWeight="50"
+                android:textSize="20sp"
+                android:layout_toRightOf="@+id/imagePeson"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="50dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
 
-            </GridLayout>
-
-        </LinearLayout>
-    </ScrollView>
-
-</RelativeLayout>
+</FrameLayout>

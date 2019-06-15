@@ -5,7 +5,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.viewpager.widget.ViewPager;
 
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -15,7 +14,6 @@ import com.rahgena.dlatih.R;
 import com.rahgena.dlatih.view.fragment.home;
 import com.rahgena.dlatih.view.fragment.pesan;
 import com.rahgena.dlatih.view.fragment.profil;
-import com.rahgena.dlatih.view.tab.SlidingTabLayout;
 
 public class MainActivity extends AppCompatActivity {
     private static final  String TAG = MainActivity.class.getSimpleName();
@@ -58,5 +56,4 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
 }
