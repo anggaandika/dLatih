@@ -1,0 +1,11 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">D`Latih</string>
+    <string name="titel_home" tools:ignore="ExtraTranslation">Home</string>
+
+    // TODO: 14/06/2019
+    <string name="titel_pesan">Pesan</string>
+    <string name="titel_profile">Profil</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

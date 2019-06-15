@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="colorPrimary">#005D88</color>
+    <color name="colorPrimaryDark">#003957</color>
+    <color name="colorAccent">#1B1ED8</color>
+
+    // TODO: 14/02/2019
+    <color name="navigationIcon">#005D88</color>
+    <color name="navigationText">#dae9f6</color>
+
+    <color name="cekNavigation">#007AB3</color>
+    <color name="uncekNavigation">#00AAFF</color>
+</resources>
