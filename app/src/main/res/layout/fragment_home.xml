@@ -3,68 +3,275 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.fragment.home">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/viewCari"
+    <SearchView
+        android:queryHint="Search"
+        android:iconifiedByDefault="false"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        app:cardCornerRadius="20dp">
+        tools:targetApi="honeycomb">
+    </SearchView>
 
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:inputType="text"
-            android:hint="Cari"
-            android:layout_gravity="center"
-            android:layout_marginTop="5dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="5dp"/>
-    </androidx.cardview.widget.CardView>
 
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/katagori"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/viewCari"
-        android:layout_marginTop="5dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginBottom="10dp"
-        android:padding="5dp">
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/kat"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:padding="5dp">
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_gravity="center"
-                android:layout_margin="30dp"
-                android:text="katagori"
-                android:textSize="20dp" />
-
-        </androidx.cardview.widget.CardView>
-
-    </androidx.core.widget.NestedScrollView>
-
-    <androidx.core.widget.NestedScrollView
-        android:id="@+id/viewPelatih"
-        android:layout_below="@+id/katagori"
+    <ScrollView
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="130dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <GridView
-            android:id="@+id/Pelatih"
+        <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content">
+            <GridLayout
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:columnCount="3"
+                android:rowCount="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:targetApi="ice_cream_sandwich">
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="3"
+                    android:layout_margin="1dp">
 
-    </androidx.core.widget.NestedScrollView>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/katagori" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="3"
+                    android:layout_margin="1dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/daftarPelatih" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="3"
+                    android:layout_margin="1dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/promo" />
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+            <RelativeLayout
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:textSize="30sp"
+                    android:textColor="#000000"
+                    android:text="Pelatih"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <GridLayout
+                android:layout_marginTop="10dp"
+                android:columnCount="2"
+                android:rowCount="5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:targetApi="ice_cream_sandwich">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="3"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/image"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp" />
+                        <TextView
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#6f6f6f"
+                            android:text="Nama Pelatih"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#6f6f6f"
+                            android:text="Kategori"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="3"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/image"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp" />
+                        <TextView
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#6f6f6f"
+                            android:text="Nama Pelatih"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#6f6f6f"
+                            android:text="Kategori"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="3"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/image"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp" />
+                        <TextView
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#6f6f6f"
+                            android:text="Nama Pelatih"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#6f6f6f"
+                            android:text="Kategori"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="3"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:layout_marginTop="3dp"
+                            android:src="@drawable/image"
+                            android:layout_width="150dp"
+                            android:layout_height="100dp" />
+                        <TextView
+                            android:layout_gravity="left"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#6f6f6f"
+                            android:text="Nama Pelatih"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:layout_marginLeft="3dp"
+                            android:layout_gravity="left"
+                            android:layout_marginTop="3dp"
+                            android:textColor="#6f6f6f"
+                            android:text="Kategori"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+
+            </GridLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
 </RelativeLayout>
