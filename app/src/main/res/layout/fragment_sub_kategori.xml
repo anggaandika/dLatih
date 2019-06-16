@@ -46,22 +46,25 @@
             tools:targetApi="ice_cream_sandwich">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/card"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_columnWeight="3"
                 android:layout_margin="10dp">
 
                 <LinearLayout
+                    android:id="@+id/top_layout"
                     android:orientation="vertical"
                     android:gravity="center"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <ImageView
+                        android:id="@+id/img_thumbnail"
                         android:layout_marginTop="3dp"
-                        android:src="@drawable/image"
                         android:layout_width="150dp"
                         android:layout_height="100dp" />
                     <TextView
+                        android:id="@+id/nama"
                         android:layout_gravity="left"
                         android:layout_marginLeft="5dp"
                         android:layout_marginTop="3dp"
@@ -71,203 +74,18 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
                     <TextView
+                        android:id="@+id/katagori"
                         android:layout_marginLeft="3dp"
                         android:layout_gravity="left"
                         android:layout_marginTop="3dp"
                         android:textColor="#6f6f6f"
-                        android:text="Olahraga"
+                        android:text="Kategori"
                         android:textSize="18sp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="3"
-                android:layout_margin="10dp">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:layout_marginTop="3dp"
-                        android:src="@drawable/image"
-                        android:layout_width="150dp"
-                        android:layout_height="100dp" />
-                    <TextView
-                        android:layout_gravity="left"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="3dp"
-                        android:textColor="#6f6f6f"
-                        android:text="Nama Pelatih"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginLeft="3dp"
-                        android:layout_gravity="left"
-                        android:layout_marginTop="3dp"
-                        android:textColor="#6f6f6f"
-                        android:text="Olahraga"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="3"
-                android:layout_margin="10dp">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:layout_marginTop="3dp"
-                        android:src="@drawable/image"
-                        android:layout_width="150dp"
-                        android:layout_height="100dp" />
-                    <TextView
-                        android:layout_gravity="left"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="3dp"
-                        android:textColor="#6f6f6f"
-                        android:text="Nama Pelatih"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginLeft="3dp"
-                        android:layout_gravity="left"
-                        android:layout_marginTop="3dp"
-                        android:textColor="#6f6f6f"
-                        android:text="Olahraga"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="3"
-                android:layout_margin="10dp">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:layout_marginTop="3dp"
-                        android:src="@drawable/image"
-                        android:layout_width="150dp"
-                        android:layout_height="100dp" />
-                    <TextView
-                        android:layout_gravity="left"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="3dp"
-                        android:textColor="#6f6f6f"
-                        android:text="Nama Pelatih"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginLeft="3dp"
-                        android:layout_gravity="left"
-                        android:layout_marginTop="3dp"
-                        android:textColor="#6f6f6f"
-                        android:text="Olahraga"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="3"
-                android:layout_margin="10dp">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:layout_marginTop="3dp"
-                        android:src="@drawable/image"
-                        android:layout_width="150dp"
-                        android:layout_height="100dp" />
-                    <TextView
-                        android:layout_gravity="left"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="3dp"
-                        android:textColor="#6f6f6f"
-                        android:text="Nama Pelatih"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginLeft="3dp"
-                        android:layout_gravity="left"
-                        android:layout_marginTop="3dp"
-                        android:textColor="#6f6f6f"
-                        android:text="Olahraga"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="3"
-                android:layout_margin="10dp">
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-                    <ImageView
-                        android:layout_marginTop="3dp"
-                        android:src="@drawable/image"
-                        android:layout_width="150dp"
-                        android:layout_height="100dp" />
-                    <TextView
-                        android:layout_gravity="left"
-                        android:layout_marginLeft="5dp"
-                        android:layout_marginTop="3dp"
-                        android:textColor="#6f6f6f"
-                        android:text="Nama Pelatih"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-                    <TextView
-                        android:layout_marginLeft="3dp"
-                        android:layout_gravity="left"
-                        android:layout_marginTop="3dp"
-                        android:textColor="#6f6f6f"
-                        android:text="Olahraga"
-                        android:textSize="18sp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
-
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
 
         </GridLayout>
     </ScrollView>
